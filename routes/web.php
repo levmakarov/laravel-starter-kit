@@ -11,3 +11,5 @@ Route::get('/', function () {
 Route::get('/about', [AboutController::class, 'index']);
 
 Route::get('/contact', [ContactController::class, 'index']);
+
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
